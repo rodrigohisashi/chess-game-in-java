@@ -128,7 +128,7 @@ public class ChessMatch {
 			if (promoted == null) {
 				throw new IllegalStateException("There is no piece to be promoted");
 			}
-			if (!type.equals("B") && type.equals("N") && type.equals("R") && !type.equals("Q")) {
+			if (!type.equals("B") && !type.equals("N") && !type.equals("R") && !type.equals("Q")) {
 				return promoted;	
 			}
 			
@@ -377,7 +377,7 @@ public class ChessMatch {
 		placeNewPiece('e', 7, new Pawn(board, Color.BLACK, this));
 		placeNewPiece('f', 7, new Pawn(board, Color.BLACK, this));
 		placeNewPiece('g', 7, new Pawn(board, Color.BLACK, this));
-		placeNewPiece('h', 7, new Pawn(board, Color.WHITE, this));
+		placeNewPiece('h', 7, new Pawn(board, Color.BLACK, this));
 
 	}
 
